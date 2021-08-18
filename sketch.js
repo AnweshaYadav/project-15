@@ -16,6 +16,7 @@ function preload(){
   jwelleryImg = loadImage("jwell.png");
   swordImg = loadImage("sword.png");
   endImg =loadAnimation("gameOver.png");
+ 
 }
 
 function setup(){
@@ -37,6 +38,7 @@ cashG=new Group();
 diamondsG=new Group();
 jwelleryG=new Group();
 swordGroup=new Group();
+  endImg.scale = 0.5;
 
 }
 
@@ -99,6 +101,7 @@ function createCash() {
     cashG.destroyEach();
     treasureCollection = treasureCollection+50;
   }
+  
 }
 
 function createDiamonds() {
